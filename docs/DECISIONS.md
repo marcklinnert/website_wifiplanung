@@ -18,6 +18,11 @@ Statusbegriffe:
 | WiFi-Planung-Leistungen | Digitale WLAN-Planung, Predictive Simulation, AP-Auswahl und Dokumentation | Beschlossen |
 | Abgrenzung BA-One | Allgemeine Netzwerk-, Glasfaser- und Fernsehtechnik bei BA-One | Beschlossen |
 | Vor-Ort-Messungen | Nicht Teil des WiFi-Planung-Portfolios | Beschlossen |
+| Ekahau-Kompetenz | Persönliche Ekahau-Zertifizierung von Marc Klinnert mit geeigneten Ekahau-Logos auf der Hauptseite sichtbar darstellen; Zertifikatsstatus und Logo-Nutzungsregeln vor Veröffentlichung prüfen | Beschlossen / Nachweise offen |
+| Partnerprogramm | Partnerzielgruppe: Ingenieurbüros, Elektroplaner, TGA-Planer, IT-Systemhäuser und Architekten | Beschlossen |
+| Partnerprovision | 5 % Kontaktvermittlung, 7,5 % qualifizierte Vorstellung, 10 % konkrete Projektvermittlung mit aktiver Anbahnung | Beschlossen |
+| Provisionsbasis | Tatsächlich bezahlter Netto-Auftragswert | Beschlossen |
+| Provisionsberechtigung | Ausschließlich Vermittlung neuer Kunden; keine Provision für Bestandskunden und keine Folgeprojekte desselben vermittelten Kunden | Beschlossen |
 | Design | Eckige Formen, keine runden UI-Elemente, keine Standard-Emojis | Beschlossen |
 | Glassmorphism | Dezent für Tiefe allgemein; Glossy-Glass-Hintergrund besonders für den Kalkulator | Beschlossen |
 | UX | Möglichst wenig unnötiges Scrollen; kompakte, hochwertige Informationsstruktur | Beschlossen |
@@ -65,8 +70,10 @@ Statusbegriffe:
 8. Supabase-Projekt, EU-Region, Auftragsverarbeitungsvertrag, Backup- und Aufbewahrungskonzept.
 9. Sanity-Projekt und gegebenenfalls Kosten / Rollenmodell.
 10. Freigabe für Logos, Kundenreferenzen, Fotos und anonymisierte Projektvisualisierungen.
-11. Rechtliche Prüfung der Umsatzsteuer-/Kleinunternehmerangaben und Website-Rechtstexte.
-12. Aufbewahrungsfristen und Löschkonzept für Projektanfragen und Grundrisse.
+11. Originalnachweis der Ekahau-Zertifizierung, genaue offizielle Bezeichnung und aktueller Status; offizielle Logo-Dateien und deren Nutzungsrichtlinien prüfen.
+12. Rechtliche Prüfung des Partnervertrags, insbesondere Neukundendefinition, Lead-Registrierung, Provisionszuordnung und Abrechnung.
+13. Rechtliche Prüfung der Umsatzsteuer-/Kleinunternehmerangaben und Website-Rechtstexte.
+14. Aufbewahrungsfristen und Löschkonzept für Projektanfragen und Grundrisse.
 
 ## Veraltete oder nicht freigegebene Werte
 
