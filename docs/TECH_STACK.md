@@ -16,7 +16,7 @@ Empfohlener Aufbau:
 - **Serverfunktionen:** Next.js Route Handlers / Server Actions, serverseitige Validierung und Preisberechnung
 - **Animationen:** Motion (React) nur gezielt
 - **Browser- und E2E-Tests:** Playwright
-- **Entwicklungs-Live-Editor:** Impeccable Live Mode, lokal und nur nach Prüfung der Beta-Kompatibilität
+- **Entwicklungs-Live-Editor:** Impeccable ist als Projekt-Skill/Plugin für Design-Review vorgesehen; Live Mode nur nach praktischem Cloud-Kompatibilitätstest. Ein lokaler Workflow wird nicht vorausgesetzt.
 - **Dokumentationsrecherche:** Context7 und offizielle Herstellerdokumentationen
 
 ## 2. Warum diese Kombination?
@@ -67,9 +67,7 @@ Zu prüfen:
 
 ### Impeccable Live Mode – Entwicklungseditor
 
-Impeccable Live Mode ermöglicht die visuelle Auswahl von Elementen im lokalen Browser, Variantenvergleich und Übernahme der ausgewählten Änderungen in den Quellcode.
-
-Wichtig: Die offizielle Dokumentation kennzeichnet Live Mode als Beta. Er setzt einen lokalen Checkout und einen laufenden Dev-Server mit HMR voraus; die Funktion ist nicht für direkte Bearbeitung der produktiven Website gedacht.
+Impeccable bietet einen Claude-Code-Skill/Plugin mit Design-Review-Kommandos wie critique, audit und polish. Der Live Mode ist Beta und benötigt eine laufende Web-App sowie eine funktionierende Browser-/Helper-Verbindung. Die offizielle Dokumentation nennt Next.js als unterstütztes Webprojekt; ob die Verbindung in unserer Claude-Code-Cloud-Sitzung funktioniert, ist noch nicht bestätigt. Deshalb vor Einsatz in einer Cloud-Sitzung praktisch testen. Keine Hooks ungeprüft aktivieren.
 
 Dokumentation:
 - https://impeccable.style/docs/live/
