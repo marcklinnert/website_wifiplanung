@@ -1,96 +1,131 @@
-# Startprompt für Claude Code
+# Startanleitung und erster Arbeitsauftrag für Claude Code im Browser
 
-Diesen Prompt nach dem Klonen des Repositories auf dem Branch develop in Claude Code einfügen.
+Dieser Ablauf ist für **Claude Code unter https://claude.ai/code** ausgelegt. Es werden keine lokalen Terminalbefehle benötigt.
+
+## Einrichtung in Claude Code
+
+1. Öffne https://claude.ai/code und melde dich an.
+2. Verbinde dein GitHub-Konto und installiere/autorisiere die Claude GitHub App für `marcklinnert/website_wifiplanung).
+3. Wähle das Repository `marcklinnert/website_wifiplanung`.
+4. Wähle als Ausgangsbranch ausdrücklich `develop`, nicht `main`.
+5. Nutze die von Claude bereitgestellte Cloud-Umgebung (bei der ersten Einrichtung die Standardumgebung anlegen).
+6. Wähle zunächst den Modus **Plan**.
+7. Füge den nachfolgenden Arbeitsauftrag in das Eingabefeld der Browser-Sitzung ein.
+
+Jede Cloud-Sitzung arbeitet in einer eigenen isolierten Umgebung und auf einem eigenen Arbeits-Branch. Claude soll den Pull Request gegen `develop` richten. Den Pull Request erst nach Review mergen.
 
 ---
+
+# Arbeitsauftrag: Phase 0 – Projektprüfung und technischer Umsetzungsplan
 
 Du übernimmst die Rolle eines erfahrenen Lead Frontend Engineers, Full-Stack Engineers und Design Engineers für das Projekt WiFi-Planung.
 
-## Zuerst vollständig lesen
+## 1. Zuerst vollständig lesen
 
 Lies zuerst:
-- CLAUDE.md
-- docs/PROJECT_BRIEF.md
-- docs/DECISIONS.md
-- docs/TECH_STACK.md
-- docs/CALCULATOR_SPEC.md
-- docs/REFERENCES_AND_CASE_STUDIES.md
+- `CLAUDE.md`
+- `docs/PROJECT_BRIEF.md`
+- `docs/DECISIONS.md`
+- `docs/TECH_STACK.md`
+- `docs/CALCULATOR_SPEC.md`
+- `docs/REFERENCES_AND_CASE_STUDIES.md`
 
 Diese Dateien enthalten die abgestimmten Projektentscheidungen. Beschlossene Entscheidungen nicht stillschweigend ändern.
 
-## Ziel dieses ersten Durchlaufs
+## 2. Repository prüfen
 
-Noch NICHT die komplette Website gestalten oder alle Funktionen implementieren. Führe zunächst einen kontrollierten Phase-0-/Phase-1-Start durch:
+- Bestätige Repository, Ausgangsbranch und Arbeits-Branch der Cloud-Sitzung.
+- Prüfe alle vorhandenen Dateien und den aktuellen Projektstand.
+- Das Repository enthält bisher Dokumentation und noch keine produktive Website-Anwendung.
+- Verändere `main) nicht.
+- Keine vorhandenen Dateien oder Assets löschen oder überschreiben.
+- Keine Secrets ausgeben oder in Git schreiben.
 
-### A. Repository und Umgebung prüfen
-1. Prüfe git status, aktuellen Branch, Remotes und vorhandene Dateien.
-2. Arbeite ausschließlich auf develop oder einem neu angelegten feature/*-Branch. Falls der aktuelle Branch main ist, wechsle nicht blind; melde den Zustand und wechsle nach Prüfung auf develop.
-3. Prüfe lokal installierte Node.js- und pnpm-Versionen.
-4. Prüfe, ob bereits Dateien oder lokale Assets des Auftraggebers vorhanden sind. Keine lokalen Assets überschreiben, verschieben oder löschen.
-5. Keine Secrets ausgeben oder in Git schreiben.
+## 3. Externe Skills und Werkzeuge recherchieren – noch nicht installieren
 
-### B. Technische Architektur verifizieren
-1. Prüfe die aktuellen stabilen offiziellen Dokumentationen zu Next.js App Router, TypeScript, Tailwind CSS, Sanity Visual Editing und Supabase.
-2. Nutze Context7, falls verfügbar. Ansonsten offizielle Dokumentationen.
-3. Verifiziere die derzeit kompatiblen Versionen und Installationsanweisungen; Versionsnummern nicht raten.
-4. Bestätige oder korrigiere die Empfehlung aus docs/TECH_STACK.md mit kurzer Begründung.
-5. Beachte besonders:
-   - Sanity ist ausschließlich für veröffentlichbare Marketinginhalte vorgesehen.
-   - Vertrauliche Preisparameter, Kundenanfragen und Grundrisse gehören in geschützte serverseitige Systeme.
-   - Supabase Storage muss private Buckets, RLS und autorisierte Downloads nutzen.
-   - Impeccable Live Mode ist ein lokales Entwicklungswerkzeug und laut Dokumentation Beta. Nicht in der Produktionswebsite aktivieren.
-6. Deployment- und E-Mail-Provider sind noch nicht entschieden. Keine Accounts oder kostenpflichtigen Dienste anlegen.
+Prüfe die offiziellen bzw. ursprünglichen Quellen:
 
-### C. Technische Grundstruktur vorbereiten
-Wenn keine widersprechenden lokalen Dateien vorhanden sind:
-1. Scaffold eine schlanke Next.js-App im bestehenden Repository mit App Router, TypeScript, Tailwind CSS, ESLint und pnpm.
-2. Halte die Versionsstände aktuell und committe den pnpm-Lockfile.
-3. Richte Grundskripte für dev, build, lint, typecheck und test ein.
-4. Lege eine saubere Komponenten-/Designsystem-Struktur an, aber noch keine fertige Startseite.
-5. Lege .env.example mit ausschließlich leeren Platzhaltern an, wenn die Integrationen vorbereitet werden müssen. Niemals echte Schlüssel eintragen.
-6. Richte eine minimale GitHub-Actions-Prüfung für Lint, Typecheck und Build ein, sofern das mit dem gewählten Setup stabil möglich ist.
-7. Schreibe keine Beispielpreise, Kundendaten oder vertraulichen Projektdaten in die Anwendung.
+- Taste Skill: https://github.com/Leonxlnx/taste-skill
+- Impeccable: https://github.com/pbakaus/impeccable
+- MotionSites Web Builder: https://github.com/MotionSites-AI/claude-skill
+- Playwright CLI: https://github.com/microsoft/playwright-cli
+- Context7: https://context7.com/
+- Ponytail: Repository-Adresse und Projektstatus zuerst verifizieren; nicht anhand eines vermuteten GitHub-Pfads installieren.
+- Cloudflare Security Audit Skill: https://github.com/cloudflare/security-audit-skill
 
-### D. Designsystem nur als Fundament
-Erstelle zunächst Design-Tokens und eine knappe Dokumentation:
-- Blau ungefähr #0262B4
-- Cyan ungefähr #02ADF4
-- Weiß
-- Navy als Vorschlag, final mit BA-One-Markenauftritt abzugleichen
-- eckige Formen; keine runden UI-Elemente
-- keine Standard-Emojis
-- konsistente SVG-Icons
-- Glossy Glass besonders für den späteren Projektkalkulator
-- gute Lesbarkeit, Kontrast und Reduced Motion
-- kompakte Informationsarchitektur statt unnötigem Scrollen
+Prüfe bei jedem Werkzeug:
+- Herkunft und Vertrauenswürdigkeit
+- Lizenz und Nutzungsbedingungen
+- Installationsanforderungen
+- Kompatibilität mit Claude Code Cloud-Sessions
+- Notwendige Berechtigungen und Netzwerkzugriffe
+- tatsächlichen Nutzen für dieses Projekt
+- ob es sich um ein Claude-Plugin, einen Claude-Skill, eine MCP-Integration oder ein normales CLI/Testwerkzeug handelt
 
-Keine vollständige Landingpage, keinen Preiskalkulator und keine CMS-Integration in diesem ersten Durchlauf bauen.
+Wichtig: Nicht jedes GitHub-Repository ist ein Plugin-Marketplace. Versuche nicht, ein einfaches Skill-Repository als Plugin-Marketplace hinzuzufügen. Unterscheide zwischen Account-Plugins, Projekt-Skills unter `.claude/skills/<skill-name>/SKILL.md` und CLI-/MCP-Werkzeugen.
 
-### E. Dokumentation und Abschluss
-Aktualisiere die Projektdokumentation nur, wenn eine überprüfte technische Entscheidung geändert wird. Notiere offene Integrationen und erforderliche Zugangsdaten, ohne Zugangsdaten anzufordern oder zu speichern.
+## 4. Vorläufige Priorisierung
 
-Führe die verfügbaren Prüfungen aus. Erstelle eine Zusammenfassung mit:
-- festgestelltem Ausgangszustand
-- gewähltem Stack und offiziellen Quellen
-- angelegten Dateien und Struktur
-- ausgeführten Tests samt Ergebnis
-- notwendigen nächsten Schritten
-- offenen Entscheidungen oder Blockern
+Zuerst auf Eignung prüfen:
+1. Taste Skill – eigenständige Designrichtung
+2. Impeccable – Designreview und prüfen, ob der Live Mode in Cloud-Sessions verfügbar ist
+3. MotionSites Web Builder – Designreferenzen und Animationen
+4. Playwright – Browser- und End-to-End-Tests; CLI-Unterstützung in Cloud-Umgebung verifizieren
+5. Context7 – aktuelle technische Dokumentation
 
-Stoppe nach diesem Fundament und warte auf die Freigabe, bevor du die eigentliche Website-Oberfläche implementierst.
+Ponytail zunächst nur prüfen. Cloudflare Security Audit für die spätere Sicherheitsprüfung vormerken.
 
-## Gestaltungs- und Qualitätsmaßstab
+Noch keine Skills, Plugins oder Tools ungeprüft installieren. Erst konkrete Empfehlung mit Installationsplan vorlegen.
 
-Die Website muss hochwertig, eigenständig und technisch glaubwürdig wirken. Vermeide austauschbare KI-Layouts, übermäßige Animationen, dekorative Emojis, runde Karten und unnötig lange Scrollstrecken.
+## 5. Technische Architektur verifizieren
 
-Die fachliche Positionierung lautet: WiFi-Planung fokussiert auf digitale WLAN-Planung und Predictive Simulation. Keine Vor-Ort-Messungen oder physische Bestandsaufnahme behaupten.
+Prüfe aktuelle stabile offizielle Dokumentationen zu:
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Sanity Visual Editing / Presentation Tool
+- Supabase Postgres, Auth und private Storage
+- Motion
+- Playwright
 
----
+Nutze Context7, falls verfügbar; andernfalls offizielle Dokumentationen. Versionsnummern und Kompatibilität nicht raten.
 
-## Hinweis für den Auftraggeber
+Bestätige oder korrigiere die Empfehlungen in `docs/TECH_STACK.md) mit kurzer Begründung.
 
-Vor dem ersten Claude-Code-Durchlauf:
-- Repository lokal klonen bzw. aktualisieren.
-- Auf develop wechseln.
-- Logo, Unternehmenslogos, Portrait und freigegebene Grafikdateien lokal in einem vorbereiteten Medienordner ablegen.
-- Keine vertrauliche Brudermühle-Original-PDF in das öffentliche Git-Repository kopieren.
+Besonders beachten:
+- Sanity nur für veröffentlichbare Marketinginhalte.
+- Vertrauliche Preisparameter, Kundenanfragen und Grundrisse in geschützten serverseitigen Systemen.
+- Private Supabase Storage Buckets, RLS und autorisierte Downloads.
+- Impeccable Live Mode ist ein Entwicklungswerkzeug; Verfügbarkeit im Cloud-Browser separat prüfen. Nicht voraussetzen, dass ein lokaler Browser-Live-Editor in einer Cloud-Sitzung funktioniert.
+- Keine Accounts oder kostenpflichtigen Dienste anlegen.
+- Deployment- und E-Mail-Provider sind noch nicht entschieden.
+
+## 6. Browser-Workflow und Asset-Handling
+
+- Es wird ausschließlich im Browser gearbeitet. Keine Anweisungen geben, die lokale PowerShell, Git CLI, VS Code oder einen lokalen Dateipfad voraussetzen.
+- Prüfe, wie in Claude Code Web Dateien an eine Sitzung angehängt bzw. in die Cloud-Arbeitsumgebung eingebracht werden können.
+- Weise darauf hin, dass vertrauliche Projektunterlagen und Originalgrundrisse nicht in das öffentliche Repository hochgeladen werden dürfen.
+- Falls lokale Assets fehlen, dokumentiere die benötigten Dateien; verwende keine erfundenen Platzhalterlogos als echte Referenzen.
+
+## 7. Noch keine Implementierung
+
+In dieser Phase:
+- Keine Website-App scaffolden.
+- Keine Startseite bauen.
+- Keinen Kalkulator bauen.
+- Keine CMS-Integration implementieren.
+- Keine externen Dienste einrichten.
+- Keine Dateien ändern oder installieren, außer wenn eine rein notwendige Dokumentationskorrektur nach Rückfrage freigegeben wurde.
+
+## 8. Ergebnis
+
+Erstelle einen klar strukturierten Bericht mit:
+- geprüftem Repository- und Branch-Zustand
+- bestätigt/korrigierter Technologiearchitektur
+- Skills und Tools: geeignet, ungeeignet, offene Prüfung
+- Kompatibilität mit Claude Code Cloud-Sessions
+- Vorschlag zur Asset-Übermittlung
+- Risiken und benötigte externe Freigaben
+- konkrete nächste Phase zur Freigabe
+
+Warte danach auf meine ausdrückliche Freigabe. Keine Implementierung vor dieser Freigabe.
