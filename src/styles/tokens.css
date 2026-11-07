@@ -1,0 +1,150 @@
+/*
+ * WiFi-Planung – Design-Tokens (Phase 1, vorläufig)
+ *
+ * Primitive Farben: Startwerte aus dem WiFi-Planung-Logo (Blau, Cyan, Weiß).
+ * Navy ist ein Gestaltungsvorschlag, kein Logo-Wert. Alle Werte sind vor der
+ * finalen Festlegung an den Originaldateien bzw. am BA-One-Auftritt zu prüfen.
+ *
+ * Regeln:
+ * - Komponenten verwenden nur semantische Tokens (fg, link, accent, focus,
+ *   control, border, status), keine primitiven Markenfarben.
+ * - Cyan #02ADF4 hat auf Weiß nur 2,53:1 Kontrast. Auf hellen Flächen nie als
+ *   Text- oder alleinige Fokusfarbe einsetzen – dafür "cyan-on-light".
+ * - Blau #0262B4 hat auf Navy nur 2,81:1 Kontrast. Auf dunklen Flächen dafür
+ *   "blue-on-dark" verwenden.
+ * - Eckige Geometrie: Alle Radius-Tokens sind entfernt (siehe --radius-*).
+ * - Kontrastpaare werden durch scripts/check-contrast.mjs geprüft.
+ */
+
+@theme {
+  /* Tailwind-Standardpaletten entfernen: nur projekteigene Farben zulassen. */
+  --color-*: initial;
+
+  /* Primitive – Marke */
+  --color-brand-blue: #0262b4;
+  --color-brand-cyan: #02adf4;
+  --color-navy: #071b33;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Primitive – zugängliche Markenvarianten */
+  --color-cyan-on-light: #00668f; /* 6,37:1 auf Weiß */
+  --color-blue-on-dark: #6fb2f0; /* 7,66:1 auf Navy */
+
+  /* Primitive – Neutralskala (kühles Grau) */
+  --color-neutral-50: #f4f7fa;
+  --color-neutral-100: #e6ecf2;
+  --color-neutral-200: #cbd5e0;
+  --color-neutral-300: #a7b4c3;
+  --color-neutral-400: #7b8a9c;
+  --color-neutral-500: #5e6e81;
+  --color-neutral-600: #4a5a6e;
+  --color-neutral-700: #35445a;
+  --color-neutral-800: #1f2d40;
+  --color-ink: #0b1726;
+
+  /* Primitive – Status (hell / dunkel) */
+  --color-error: #b42318;
+  --color-error-on-dark: #ff8a80;
+  --color-success: #1a7f37;
+  --color-success-on-dark: #6fd08c;
+  --color-warning: #8a5a00;
+  --color-warning-on-dark: #f5c26b;
+
+  /* Eckige Geometrie: keine Radius-Utilities (rounded-sm, -md, -lg, …). */
+  --radius-*: initial;
+
+  /* Schatten: zurückhaltend, technisch */
+  --shadow-*: initial;
+  --shadow-sm: 0 1px 2px 0 rgb(7 27 51 / 0.08);
+  --shadow-md: 0 4px 12px -2px rgb(7 27 51 / 0.14);
+  --shadow-lg: 0 16px 40px -12px rgb(7 27 51 / 0.24);
+
+  /* Typografie: Systemschriften, bis eine lizenzierte Hausschrift feststeht. */
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    monospace;
+
+  /* Bewegung */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+}
+
+/* Semantische Tokens als Tailwind-Farben (bg-surface, text-fg, …). */
+@theme inline {
+  --color-surface: var(--wp-surface);
+  --color-surface-raised: var(--wp-surface-raised);
+  --color-fg: var(--wp-fg);
+  --color-fg-muted: var(--wp-fg-muted);
+  --color-link: var(--wp-link);
+  --color-accent: var(--wp-accent);
+  --color-focus: var(--wp-focus);
+  --color-control: var(--wp-control);
+  --color-control-fg: var(--wp-control-fg);
+  --color-border: var(--wp-border);
+  --color-border-subtle: var(--wp-border-subtle);
+  --color-status-error: var(--wp-status-error);
+  --color-status-success: var(--wp-status-success);
+  --color-status-warning: var(--wp-status-warning);
+}
+
+@layer base {
+  /* Helle Fläche (Standard) */
+  :root,
+  [data-surface="light"] {
+    --wp-surface: var(--color-white);
+    --wp-surface-raised: var(--color-neutral-50);
+    --wp-fg: var(--color-ink);
+    --wp-fg-muted: var(--color-neutral-600);
+    --wp-link: var(--color-brand-blue);
+    --wp-accent: var(--color-cyan-on-light);
+    --wp-focus: var(--color-brand-blue);
+    --wp-control: var(--color-brand-blue);
+    --wp-control-fg: var(--color-white);
+    --wp-border: var(--color-neutral-400);
+    --wp-border-subtle: var(--color-neutral-200);
+    --wp-status-error: var(--color-error);
+    --wp-status-success: var(--color-success);
+    --wp-status-warning: var(--color-warning);
+  }
+
+  /* Dunkle Fläche (Navy) */
+  [data-surface="dark"] {
+    --wp-surface: var(--color-navy);
+    --wp-surface-raised: var(--color-neutral-800);
+    --wp-fg: var(--color-white);
+    --wp-fg-muted: var(--color-neutral-300);
+    --wp-link: var(--color-blue-on-dark);
+    --wp-accent: var(--color-brand-cyan);
+    --wp-focus: var(--color-brand-cyan);
+    --wp-control: var(--color-brand-cyan);
+    --wp-control-fg: var(--color-navy);
+    --wp-border: var(--color-neutral-400);
+    --wp-border-subtle: var(--color-neutral-700);
+    --wp-status-error: var(--color-error-on-dark);
+    --wp-status-success: var(--color-success-on-dark);
+    --wp-status-warning: var(--color-warning-on-dark);
+  }
+
+  :root {
+    /* Bewegungsdauern */
+    --wp-duration-fast: 120ms;
+    --wp-duration-base: 200ms;
+    --wp-duration-slow: 320ms;
+
+    /* Glass-Tokens – definiert, in Phase 1 noch nicht verwendet.
+       Einsatz gezielt (v. a. Kalkulator); Lesbarkeit hat Vorrang. */
+    --wp-glass-bg: rgb(255 255 255 / 0.08);
+    --wp-glass-bg-strong: rgb(255 255 255 / 0.14);
+    --wp-glass-border: rgb(255 255 255 / 0.22);
+    --wp-glass-highlight: rgb(255 255 255 / 0.35);
+    --wp-glass-blur: 16px;
+
+    /* Fokusring */
+    --wp-focus-width: 3px;
+    --wp-focus-offset: 2px;
+  }
+}
