@@ -1,0 +1,11 @@
+# Generiert / Abhängigkeiten
+.next/
+node_modules/
+pnpm-lock.yaml
+next-env.d.ts
+playwright-report/
+test-results/
+coverage/
+
+# Bestehende Projektdokumentation nicht automatisch umformatieren
+*.md

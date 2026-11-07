@@ -51,7 +51,9 @@ for (const file of files) {
     if (!zeroOnly.test(value)) {
       const context = css.slice(Math.max(0, match.index - 80), match.index);
       const selector = context.slice(context.lastIndexOf("}") + 1).trim();
-      violations.push(`${relative(root, file)}: ${selector} { ${match[1]}: ${value} }`);
+      violations.push(
+        `${relative(root, file)}: ${selector} { ${match[1]}: ${value} }`,
+      );
     }
   }
 }

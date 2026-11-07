@@ -43,7 +43,9 @@ const surfaces = {
 };
 
 function luminance(hex) {
-  const channels = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const channels = [1, 3, 5].map(
+    (i) => parseInt(hex.slice(i, i + 2), 16) / 255,
+  );
   const [r, g, b] = channels.map((c) =>
     c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4,
   );
@@ -119,7 +121,9 @@ for (const [surfaceName, colorName, label] of forbidden) {
 
 console.log(rows.join("\n"));
 if (failures > 0) {
-  console.error(`\nKontrastprüfung fehlgeschlagen: ${failures} Verstoß/Verstöße.`);
+  console.error(
+    `\nKontrastprüfung fehlgeschlagen: ${failures} Verstoß/Verstöße.`,
+  );
   process.exit(1);
 }
 console.log("\nKontrastprüfung erfolgreich.");
