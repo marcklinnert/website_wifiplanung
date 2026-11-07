@@ -75,6 +75,7 @@ Sekundäre Ziele:
 - Partneranfragen von TGA-Planern und Elektrofirmen gewinnen.
 - Digitale WLAN-Planung und technischen Leistungsumfang verständlich erklären.
 - Kontaktmöglichkeiten jederzeit einfach erreichbar halten.
+- Die Ekahau-Kompetenz und die persönliche ECSE-Zertifizierung als sichtbares Vertrauenssignal herausstellen.
 
 ## 5. Informationsarchitektur / Sitemap-Vorschlag
 
@@ -101,6 +102,16 @@ Sekundäre Ziele:
 - Impressum, Datenschutz und ggf. weitere rechtlich notwendige Seiten
 
 Die Startseite soll kompakt bleiben. Detaillierte Fachinhalte gehören auf passende Unterseiten statt in lange Scroll-Landingpages.
+
+### Vertrauensbereich auf der Hauptseite / Startseite
+
+Die Ekahau-Zertifizierung von Marc Klinnert soll auf der Hauptseite sichtbar dargestellt werden, zusammen mit passenden Ekahau-Marken- und Zertifizierungslogos. Die Darstellung muss eindeutig der zertifizierten Person zugeordnet sein und darf nicht den Eindruck erwecken, BA-One oder WiFi-Planung als Unternehmen seien selbst von Ekahau zertifiziert oder offizieller Ekahau-Partner, sofern dies nicht separat belegt ist.
+
+- Die genaue Zertifikatsbezeichnung und der Status werden anhand des Originalzertifikats bzw. des aktuellen Nachweises geprüft.
+- Im bisherigen LinkedIn-Nachweis wurde „ECSE Wireless LAN Design“ mit September 2023 angezeigt; diese historische Bezeichnung nicht ungeprüft als aktuelle offizielle Zertifikatsbezeichnung übernehmen.
+- Ausschließlich offizielle, für diesen Zweck freigegebene Ekahau-Logo-/Badge-Dateien und die zugehörigen Nutzungsrichtlinien verwenden.
+- Logos nicht verändern und nicht so platzieren, dass eine weitergehende Partnerschaft, Autorisierung oder Unternehmenszertifizierung suggeriert wird.
+- Die Zertifizierung als persönliche Qualifikation von Marc Klinnert kennzeichnen. Bei abgelaufenem oder nicht mehr aktivem Status keine aktive Zertifizierung behaupten.
 
 ## 6. Designrichtung
 
@@ -135,7 +146,13 @@ Gebäudetypen:
 - Privat / Wohnimmobilie
 - Partner-/Planerprojekt
 
-## 8. CMS und Editoren
+## 8. Partnerprogramm
+
+Die Partnerprogramm-Spezifikation steht in docs/PARTNER_PROGRAM_SPEC.md. Das Programm richtet sich unter anderem an Ingenieurbüros, Elektroplaner, TGA-Planer, IT-Systemhäuser und Architekten.
+
+Beschlossen ist eine provisionsbasierte Vermittlung ausschließlich neuer Kunden. Die Provision beträgt je nach Vermittlungsleistung 5 %, 7,5 % oder 10 % und wird auf Basis des tatsächlich bezahlten Netto-Auftragswerts berechnet. Folgeprojekte desselben vermittelten Kunden sind nach der bestätigten Modellentscheidung nicht provisionsberechtigt. Vertragsdetails, Neukundendefinition, Lead-Registrierung und Abrechnung sind vor dem Produktivstart rechtlich und organisatorisch festzulegen.
+
+## 9. CMS und Editoren
 
 Es werden zwei Editiermöglichkeiten benötigt:
 
@@ -144,11 +161,11 @@ Es werden zwei Editiermöglichkeiten benötigt:
 
 Preisparameter sollen sicher und ausschließlich für berechtigte Administratoren editierbar sein. Kundenanfragen und Grundrisse gehören nicht in öffentliche CMS-Inhalte.
 
-## 9. Bestehende Inhalte
+## 10. Bestehende Inhalte
 
 Die vorhandenen Texte und Inhalte von wifi-planung.de sollen zunächst so weit wie möglich übernommen werden. Eine vollständige verlässliche Bestandsaufnahme des Live-Auftritts liegt noch nicht vor. Vor endgültiger Content-Migration sind Website-Screenshots, Texte und Medien zu erfassen.
 
-## 10. Berufliche Qualifikation – belegte Angaben aus LinkedIn-Screenshot
+## 11. Berufliche Qualifikation – belegte Angaben aus LinkedIn-Screenshot
 
 - BA-One, selbstständig: September 2020 bis heute. Netzwerk- und WLAN-Planung/Installation, WLAN-Hardwareplanung und Ekahau-Coverage-Simulationen, Unterstützung bei Netzwerkplanung in Bauprojekten, Glasfaser-Sonderlösungen für TV-Kabelnetze, IT-Beratung und Hardware.
 - Siemens Healthineers: Mai 2025 bis heute, IT Infrastructure & MES – Production Network. Analyse produktionsbezogener IT-Anforderungen, technische Lösungen, Stakeholder-Zusammenarbeit, Systemadministration und Second-Level-Troubleshooting.
@@ -158,7 +175,7 @@ Die vorhandenen Texte und Inhalte von wifi-planung.de sollen zunächst so weit w
 
 Frühere Arbeitgeber sind nicht automatisch Kunden oder Projektpartner. Bei Darstellung der Unternehmenslogos muss die Kategorie korrekt bezeichnet werden.
 
-## 11. Referenzen – aktueller Kenntnisstand
+## 12. Referenzen – aktueller Kenntnisstand
 
 - ARIVO Hotels: Erweiterung der WLAN-Infrastruktur. Fernsehtechnik ist BA-One-Leistung und kein WiFi-Planung-Leistungsangebot.
 - HÖY Hotel und Wirtshaus GRASER: gemeinsames WLAN-Projekt in einem Gebäude / der Brudermühle in Bamberg; komplette WLAN-Planung und Umsetzung.
@@ -170,7 +187,7 @@ Frühere Arbeitgeber sind nicht automatisch Kunden oder Projektpartner. Bei Dars
 
 Veröffentlichung von Logos, Firmennamen und Projektbeschreibungen nur nach Klärung der erforderlichen Nutzungs- und Veröffentlichungsfreigaben.
 
-## 12. Nicht-Ziele und klare Grenzen
+## 13. Nicht-Ziele und klare Grenzen
 
 - Keine Vor-Ort-Messungen als WiFi-Planungsleistung.
 - Keine physische Bestandsaufnahme / WLAN-Site-Survey-Leistung behaupten.
