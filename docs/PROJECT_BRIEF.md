@@ -107,11 +107,13 @@ Die Startseite soll kompakt bleiben. Detaillierte Fachinhalte gehören auf passe
 
 Die Ekahau-Zertifizierung von Marc Klinnert soll auf der Startseite des BA-One-Hauptauftritts sichtbar dargestellt werden, zusammen mit dem offiziellen Ekahau-Markenlogo und dem passenden persönlichen ECSE-Zertifizierungs-Badge. Auf der WiFi-Planung-Startseite soll dieselbe Qualifikation zusätzlich als fachliches Vertrauenssignal erscheinen. Die Darstellung muss eindeutig der zertifizierten Person zugeordnet sein und darf nicht den Eindruck erwecken, BA-One oder WiFi-Planung als Unternehmen seien selbst von Ekahau zertifiziert oder offizieller Ekahau-Partner, sofern dies nicht separat belegt ist.
 
-- Die genaue Zertifikatsbezeichnung und der Status werden anhand des Originalzertifikats bzw. des aktuellen Nachweises geprüft.
-- Im bisherigen LinkedIn-Nachweis wurde „ECSE Wireless LAN Design“ mit September 2023 angezeigt; diese historische Bezeichnung nicht ungeprüft als aktuelle offizielle Zertifikatsbezeichnung übernehmen.
+- Originalzertifikat liegt vor: ECSE Design, ECSE-Nummer D-10132, erfolgreich absolvierter Kurs und bestandene Prüfung, gültig bis 10. Juli 2029 (Zertifikatsdatum und Gültigkeit gemäß vorgelegtem Dokument).
+- Das Zertifikat zeigt das Ekahau-Logo und das ECSE Design-Badge. Es nennt außerdem BICSI Continuing Education Credits (27 BICSI CECs) und Event ID OV-EKAH-WA-0124-1.
+- Für die Website die Bezeichnung „Ekahau Certified Survey Engineer (ECSE) – Design“ nur verwenden, wenn sie mit der offiziellen aktuellen Ekahau-Nomenklatur übereinstimmt; ansonsten die wörtliche Zertifikatsbezeichnung „ECSE Design“ verwenden.
+- Der ältere LinkedIn-Eintrag „ECSE Wireless LAN Design“ ist gegenüber dem vorgelegten Originalzertifikat nachrangig.
 - Ausschließlich offizielle, für diesen Zweck freigegebene Ekahau-Logo-/Badge-Dateien und die zugehörigen Nutzungsrichtlinien verwenden.
 - Logos nicht verändern und nicht so platzieren, dass eine weitergehende Partnerschaft, Autorisierung oder Unternehmenszertifizierung suggeriert wird.
-- Die Zertifizierung als persönliche Qualifikation von Marc Klinnert kennzeichnen. Bei abgelaufenem oder nicht mehr aktivem Status keine aktive Zertifizierung behaupten.
+- Die Zertifizierung als persönliche Qualifikation von Marc Klinnert kennzeichnen. Das vorgelegte Zertifikat weist eine Gültigkeit bis 10. Juli 2029 aus. Vor Veröffentlichung nach Möglichkeit den aktuellen Status direkt bei Ekahau prüfen.
 
 ## 6. Designrichtung
 
@@ -171,7 +173,7 @@ Die vorhandenen Texte und Inhalte von wifi-planung.de sollen zunächst so weit w
 - Siemens Healthineers: Mai 2025 bis heute, IT Infrastructure & MES – Production Network. Analyse produktionsbezogener IT-Anforderungen, technische Lösungen, Stakeholder-Zusammenarbeit, Systemadministration und Second-Level-Troubleshooting.
 - Brose Group: April 2023 bis Mai 2025, IT Infrastructure (LAN, WLAN, WAN). Zentrale IT-/Telekommunikationsinfrastruktur, Third-Level-Support, SD-WAN-Rollout, Netzwerkanalysen und Cisco Catalyst Center.
 - Stadtwerke Forchheim: Technical Sales Specialist September 2021 bis März 2023; zuvor Telecommunications Technician April 2018 bis September 2021. B2B-Tarife, Vertragsverhandlungen, IT-Lösungen, Telekommunikationssysteme, Glasfaser und Netzwerkinstallation.
-- ECSE Wireless LAN Design Zertifizierung wurde im LinkedIn-Profil als Zertifizierung aus September 2023 angezeigt. Zertifikatsdaten vor finaler Veröffentlichung mit dem Originalnachweis abgleichen.
+- Originalzertifikat liegt vor: ECSE Design, Nummer D-10132, gültig bis 10. Juli 2029. Die Prüfung wurde laut Zertifikat erfolgreich bestanden. Die exakte offizielle Bezeichnung und der aktuelle Status sollen vor Veröffentlichung bei Ekahau gegengeprüft werden.
 
 Frühere Arbeitgeber sind nicht automatisch Kunden oder Projektpartner. Bei Darstellung der Unternehmenslogos muss die Kategorie korrekt bezeichnet werden.
 
