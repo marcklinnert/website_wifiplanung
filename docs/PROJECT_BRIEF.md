@@ -103,9 +103,9 @@ Sekundäre Ziele:
 
 Die Startseite soll kompakt bleiben. Detaillierte Fachinhalte gehören auf passende Unterseiten statt in lange Scroll-Landingpages.
 
-### Vertrauensbereich auf der Hauptseite / Startseite
+### Vertrauensbereich auf den Hauptseiten
 
-Die Ekahau-Zertifizierung von Marc Klinnert soll auf der Hauptseite sichtbar dargestellt werden, zusammen mit passenden Ekahau-Marken- und Zertifizierungslogos. Die Darstellung muss eindeutig der zertifizierten Person zugeordnet sein und darf nicht den Eindruck erwecken, BA-One oder WiFi-Planung als Unternehmen seien selbst von Ekahau zertifiziert oder offizieller Ekahau-Partner, sofern dies nicht separat belegt ist.
+Die Ekahau-Zertifizierung von Marc Klinnert soll auf der Startseite des BA-One-Hauptauftritts sichtbar dargestellt werden, zusammen mit dem offiziellen Ekahau-Markenlogo und dem passenden persönlichen ECSE-Zertifizierungs-Badge. Auf der WiFi-Planung-Startseite soll dieselbe Qualifikation zusätzlich als fachliches Vertrauenssignal erscheinen. Die Darstellung muss eindeutig der zertifizierten Person zugeordnet sein und darf nicht den Eindruck erwecken, BA-One oder WiFi-Planung als Unternehmen seien selbst von Ekahau zertifiziert oder offizieller Ekahau-Partner, sofern dies nicht separat belegt ist.
 
 - Die genaue Zertifikatsbezeichnung und der Status werden anhand des Originalzertifikats bzw. des aktuellen Nachweises geprüft.
 - Im bisherigen LinkedIn-Nachweis wurde „ECSE Wireless LAN Design“ mit September 2023 angezeigt; diese historische Bezeichnung nicht ungeprüft als aktuelle offizielle Zertifikatsbezeichnung übernehmen.
