@@ -4,6 +4,7 @@ Lies vor jeder größeren Aufgabe mindestens:
 - docs/PROJECT_BRIEF.md
 - docs/DECISIONS.md
 - das jeweils betroffene Fachdokument
+- `docs/TOOLS_AND_SKILLS.md`, sobald externe Tools, Plugins, Skills, MCP-Server oder Browserautomatisierung betroffen sind
 
 ## Arbeitsweise
 
@@ -11,10 +12,12 @@ Lies vor jeder größeren Aufgabe mindestens:
 2. Arbeite regulär auf develop oder einem passenden feature/*-Branch. Niemals direkt auf main entwickeln.
 3. Vor größeren Änderungen kurz den Plan und betroffene Dateien benennen. Bei klaren Aufgaben keine unnötigen Rückfragen stellen.
 4. Keine Funktionen, Inhalte, Referenzleistungen oder Preise erfinden.
-5. Bei technischen Bibliotheken und APIs zuerst die aktuelle offizielle Dokumentation über Context7 bzw. die offiziellen Dokumentationsquellen prüfen.
-6. Kleine, nachvollziehbare Änderungen bevorzugen. Keine unnötige Architektur, Abstraktion oder zusätzliche Abhängigkeiten.
-7. Nach Änderungen Tests, Linting, Typecheck und relevante Browserprüfungen ausführen. Fehler nicht verschweigen.
-8. Keine Secrets, API-Keys, Kundendaten oder vertraulichen Planungsdateien committen.
+5. Bei technischen Bibliotheken und APIs zuerst aktuelle offizielle Dokumentation prüfen. Context7 verwenden, wenn es in der aktuellen Claude-Code-Sitzung tatsächlich verfügbar ist; andernfalls die offiziellen Herstellerdokumentationen direkt nutzen.
+6. Externe Tools, Plugins und Skills ausschließlich gemäß `docs/TOOLS_AND_SKILLS.md` behandeln. Ein dort verlinktes Repository ist nicht automatisch installiert oder freigegeben. Keine Installation, Hooks, MCP-Server, CLI-Werkzeuge oder Umgebungsänderungen ohne separaten ausdrücklichen Auftrag.
+7. Die Projektregeln und bestätigten Entscheidungen haben Vorrang vor allgemeinen Vorgaben externer Skills. Externe Design-Skills dürfen insbesondere unsere Marken-, UX-, Barrierefreiheits- und Architekturvorgaben nicht überschreiben.
+8. Kleine, nachvollziehbare Änderungen bevorzugen. Keine unnötige Architektur, Abstraktion oder zusätzliche Abhängigkeiten.
+9. Nach Änderungen Tests, Linting, Typecheck und relevante Browserprüfungen ausführen. Fehler nicht verschweigen.
+10. Keine Secrets, API-Keys, Kundendaten oder vertraulichen Planungsdateien committen.
 
 ## Marke und Gestaltung
 
