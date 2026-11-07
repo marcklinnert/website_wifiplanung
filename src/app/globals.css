@@ -1,1 +1,51 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* Nur Anwendungscode nach Klassen scannen – nicht Prüfskripte, Tests oder Doku. */
+@source not "../../scripts";
+@source not "../../tests";
+@source not "../../docs";
+
+@layer base {
+  /* Eckige Geometrie auch für Browser-Standardelemente (Formulare, Buttons). */
+  *,
+  ::before,
+  ::after {
+    border-radius: 0;
+  }
+
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--wp-surface);
+    color: var(--wp-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+  }
+
+  a {
+    color: var(--wp-link);
+    text-underline-offset: 0.2em;
+  }
+
+  :focus-visible {
+    outline: var(--wp-focus-width) solid var(--wp-focus);
+    outline-offset: var(--wp-focus-offset);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
